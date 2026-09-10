@@ -1,6 +1,13 @@
 public class PaymentService {
 
     public boolean processPayment(double amount) {
-        return amount > 0;
+
+        if(amount <= 0){
+            return false;
+        }
+
+        System.out.println("Processing payment");
+
+        return true;
     }
 }
